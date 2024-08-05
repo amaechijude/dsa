@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self, data):
+    def __init__(self, data:int) -> None:
         self.data = data
         self.next = None
 
@@ -10,7 +10,7 @@ node3 = Node(9)
 node4 = Node(3)
 node5 = Node(-1)
 
-xnode = Node("haha")
+xnode = Node(43)
 
 node1.next = node2
 node2.next = node3
@@ -22,7 +22,7 @@ from solution import Solution
 
 solution = Solution()
 solution.transverseAndPrint(node1)
-node1 = solution.InsertAtEnd(node1, xnode)
+node1 = solution.sortNode(node1)
 solution.transverseAndPrint(node1)
 
 

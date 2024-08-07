@@ -29,7 +29,7 @@ class Stack:
         self.headNode = newNode
 
     def pop(self):
-        temp = self.headNode
+        temp = self.headNode # temporary variable to hold the popped node
         self.headNode = self.headNode.next
         return temp.data
 
@@ -37,11 +37,11 @@ class Stack:
         return self.headNode
 
     def isEmpty(self) -> bool:
-        print(self.headNode is None)
+        return f"Node isEmpty:-> {self.headNode is None}"
 
     def listSize(self) -> int:
         if self.headNode is None:
-            return self.size
+            return f"Total nodes is : {self.size}"
         
         currentNode = self.headNode
         while currentNode:
@@ -52,13 +52,17 @@ class Stack:
 
 
 stack = Stack()
+print(stack.isEmpty())
+print(stack.listSize())
 stack.push("chai")
 stack.push("abia")
 stack.push("okay")
 stack.show()
-stack.pop()
+print(stack.pop())
 stack.show()
+print(stack.listSize())
 stack.push("haha")
 stack.push("egwu")
 stack.show()
-stack.listSize()
+print(stack.listSize())
+print(stack.isEmpty())

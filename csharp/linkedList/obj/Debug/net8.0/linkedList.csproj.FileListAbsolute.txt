@@ -1,0 +1,15 @@
+/home/amaechi/dsa/csharp/linkedList/bin/Debug/net8.0/linkedList
+/home/amaechi/dsa/csharp/linkedList/bin/Debug/net8.0/linkedList.deps.json
+/home/amaechi/dsa/csharp/linkedList/bin/Debug/net8.0/linkedList.runtimeconfig.json
+/home/amaechi/dsa/csharp/linkedList/bin/Debug/net8.0/linkedList.dll
+/home/amaechi/dsa/csharp/linkedList/bin/Debug/net8.0/linkedList.pdb
+/home/amaechi/dsa/csharp/linkedList/obj/Debug/net8.0/linkedList.GeneratedMSBuildEditorConfig.editorconfig
+/home/amaechi/dsa/csharp/linkedList/obj/Debug/net8.0/linkedList.AssemblyInfoInputs.cache
+/home/amaechi/dsa/csharp/linkedList/obj/Debug/net8.0/linkedList.AssemblyInfo.cs
+/home/amaechi/dsa/csharp/linkedList/obj/Debug/net8.0/linkedList.csproj.CoreCompileInputs.cache
+/home/amaechi/dsa/csharp/linkedList/obj/Debug/net8.0/linkedList.sourcelink.json
+/home/amaechi/dsa/csharp/linkedList/obj/Debug/net8.0/linkedList.dll
+/home/amaechi/dsa/csharp/linkedList/obj/Debug/net8.0/refint/linkedList.dll
+/home/amaechi/dsa/csharp/linkedList/obj/Debug/net8.0/linkedList.pdb
+/home/amaechi/dsa/csharp/linkedList/obj/Debug/net8.0/linkedList.genruntimeconfig.cache
+/home/amaechi/dsa/csharp/linkedList/obj/Debug/net8.0/ref/linkedList.dll

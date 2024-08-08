@@ -7,7 +7,6 @@
 # Method Rear reurns the last element on the Queue
 
 # NB: Make dequeue and enqueue O(1) operation
-#Try using doubly linked list
 
 class Node:
     def __init__(self, data) -> None:
@@ -67,7 +66,7 @@ class Queue:
         if self.size() == 1 or self.firstNode is None:
             return self.firstNode.data
         currentNode = self.firstNode
-        while currentNode:
+        while currentNode.next:
             currentNode = currentNode.next
         return currentNode.data
     
@@ -92,4 +91,8 @@ myQueue.show()
 print(f"dequed: -> {myQueue.dequeue()}")
 print(f"isEmpty: -> {myQueue.isEmpty()}")
 print(f"Size: -> {myQueue.size()}")
+
+myQueue.enqueue("okirir")
 myQueue.show()
+print(myQueue.front())
+print(myQueue.rear())

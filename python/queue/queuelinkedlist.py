@@ -60,10 +60,14 @@ class Queue:
         return self.length
     
     def front(self):
+        if self.firstNode is None:
+            return "empty node"
         return self.firstNode.data
     
     def rear(self):
-        if self.size() == 1 or self.firstNode is None:
+        if self.firstNode is None:
+            return "empty node"
+        if self.firstNode and self.size() == 1:
             return self.firstNode.data
         currentNode = self.firstNode
         while currentNode.next:

@@ -5,23 +5,28 @@ class TreeNode:
         self.left = None
 
 
-root = TreeNode("Head")
+root = TreeNode("root")
 node1 = TreeNode(1)
 node2 = TreeNode(2)
-node3 = TreeNode(4)
+node3 = TreeNode(3)
+node4 = TreeNode(4)
+node5 = TreeNode(5)
+node6 = TreeNode(7)
+node7 = TreeNode(8)
+node8 = TreeNode(9)
 
 root.left = node1
 root.right = node2
 
 node1.left = node3
+node1.right = node4
 
-print(root.left.left.data)
+node2.left = node5
+node2.right = node6
 
-def traverse(node = None):
-    if node is None:
-        return None
-    print(node.data, end=" -> ")
-    traverse(node.left)
-    traverse(node.right)
+node3.left = node7
+node3.right = node8
 
-traverse(root)
+node7.left = TreeNode("rLend")
+node6.right = TreeNode("rRend")
+

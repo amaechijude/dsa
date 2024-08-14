@@ -1,4 +1,4 @@
-from binary import root
+from tree import root
 
 class treeTraversal:
     def __init__(self) -> None:

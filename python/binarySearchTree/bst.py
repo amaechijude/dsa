@@ -12,29 +12,57 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
+class Solution:
+    def __init__(self) -> None:
+        pass
+
+    def insert(self, rootNode: TreeNode, val:int) -> TreeNode:
+        if rootNode is None:
+            return TreeNode(val)
+        else:
+            if val < rootNode.data:
+                rootNode.left = self.insert(rootNode.left, val)
+            elif val > rootNode.data:
+                rootNode.right = self.insert(rootNode.right, val)
+            return rootNode
+        
+    def maxValue(self, rootNode:TreeNode):
+        currentNode = rootNode
+        while currentNode.right is not None:
+            currentNode = currentNode.right
+        return f"The Max value is:-> {currentNode.data}"
     
-def insert(rootNode:TreeNode, val:int):
-    newNode = TreeNode(val)
-    if rootNode.data is None:
-        rootNode = newNode
-        return f"Root insert:-> {rootNode.data}"
-    if val < rootNode.data:
-        if rootNode.left is None:
-            rootNode.left = newNode
-            return f"None left Insert:-> {val}"
-        rootNode.left = insert(rootNode.left, val)
-        return f"Other left Insert:-> {val}"
-    elif val > rootNode.data:
-        if rootNode.right is None:
-            rootNode.right = newNode
-            return f"None right Insert:-> {val}"
-        rootNode.right = insert(rootNode.right, val)
-        return f"Other Insert:-> {val}"
-    return "Value exists"
+    def minValue(self, rootNode:TreeNode) -> str:
+        currentNode = rootNode
+        while currentNode.left is not None:
+            currentNode = currentNode.left
+        return f"The Min value is:-> {currentNode.data}"
+
+    
+
 
 
 root = TreeNode(21)
-print(insert(root, 21))
-print(insert(root, 20))
-print(insert(root, 19))
+s = Solution()
+s.insert(root, 44)
+s.insert(root, 51)
+s.insert(root, 71)
+s.insert(root, 10)
+s.insert(root, 2)
+s.insert(root, 1)
+s.insert(root, 0)
+s.insert(root, 69)
+print(s.maxValue(root))
+print(s.minValue(root))
 
+def inOrderTraversal(rootNod: TreeNode):
+    if rootNod is None:
+        return None
+    inOrderTraversal(rootNod.left)
+    print(rootNod.data, end=" -> ")
+    inOrderTraversal(rootNod.right)
+
+
+inOrderTraversal(root)
+print()
